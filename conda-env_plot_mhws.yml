@@ -1,0 +1,28 @@
+# To create the environment:
+# #########################
+# conda env create -f conda-env_plot_mhws.yml
+#    To update if yml-file has changed:
+#    conda env update --file conda-env_plot_mhws.yml --prune 
+# To use the environment:
+# ######################
+# conda activate plot_mhws
+name: plot_mhws
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.9
+  - gdal
+  - numpy
+  - xarray
+  - pyyaml
+  - schedule
+  - dask        # for xarray
+  - netCDF4     # for xarray
+  - bottleneck  # for xarray
+  - matplotlib
+  - cartopy
+  - basemap
+  - ipython
+  - rasterio
+  - requests
+  - cmocean
